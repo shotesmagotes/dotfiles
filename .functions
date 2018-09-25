@@ -1,0 +1,35 @@
+#!/bin/bash
+
+DOTFILE_DIR="$(echo $HOME)/.dotfiles"
+BREWFILE_DIR="$DOTFILE_DIR/brew"
+
+# Determine size of a file or total size of a directory
+function fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh;
+	else
+		local arg=-sh;
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@";
+	else
+		du $arg .[^.]* *;
+	fi;
+}
+
+# dump brewfile into dotfiles directory after install / uninstall
+function gbrew() {
+  local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
+  local main_command="${1}"
+
+  brew ${@}
+
+  for command in "${dump_commands[@]}"; do
+    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${BREWFILE_DIR}/Brewfile" --force && echo "${BREWFILE_DIR}/Brewfile updated."
+  done
+}
+
+# global install using pip3
+function gpip(){
+   PIP_REQUIRE_VIRTUALENV="0" pip3 "$@"
+}
