@@ -8,6 +8,8 @@
 # - updated bash
 # - git
 # - cmake
+# - node
+# - go
 
 # Dependency:
 # Command Line Tools
@@ -26,8 +28,9 @@ fi
 
 DOTFILE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BREWFILE_DIR="$DOTFILE_DIR/brew"
-PIP_BIN=$(brew --prefix)'/bin/pip'
+PIP_BIN=$(brew --prefix)'/bin/pip3'
 VSCODE_DIR="$DOTFILE_DIR/vscode"
+ETC_INSTALL="$DOTFILE_DIR/etc"
 
 install_brew() {
     # Install Homebrew
@@ -40,13 +43,13 @@ install_brew() {
 
 install_brew_packages() {
     if [[ -x "$(command -v brew)" ]]; then 
-        (cd "$BREWFILE_DIR" && exec brew bundle)
+        (brew update && cd "$BREWFILE_DIR" && exec brew bundle)
     fi
 }
 
 install_pip_packages() {
     if [[ -x "$(command -v $PIP_BIN)" ]]; then
-        $PIP_BIN install virtualenv pylint
+        $PIP_BIN install virtualenv pylint awscli --upgrade --user
     fi
 }
 
@@ -57,6 +60,7 @@ configure_vs_code() {
 ## execute main if called as a script
 ## (e.g. not with `source`)
 if [[ "$BASH_SOURCE" == $0 ]]; then
+    xcode-select --install
     install_brew
     brew update
     brew upgrade
@@ -64,5 +68,7 @@ if [[ "$BASH_SOURCE" == $0 ]]; then
 
     install_brew_packages
     install_pip_packages
+
+    (cd "$ETC_INSTALL" && exec ./install_conda.sh)
     configure_vs_code
 fi

@@ -1,0 +1,6 @@
+2018-11-07 11:26:53,326 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2018-11-07 11:26:53,334 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'git_helper']
+2018-11-07 11:26:53,336 DEBUG    root            Running [gcloud.auth.git-helper] with arguments: [--ignore-unknown: "True", METHOD: "get"]
+2018-11-07 11:26:53,369 INFO     oauth2client.client Refreshing access_token
+2018-11-07 11:26:53,568 INFO     root            Display format: "default"
+2018-11-07 11:26:53,569 DEBUG    root            SDK update checks are disabled.

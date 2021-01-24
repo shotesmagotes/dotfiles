@@ -1,0 +1,77 @@
+2018-10-28 16:00:13,199 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-10-28 16:00:13,202 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-10-28 16:00:13,202 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-10-28 16:00:13,204 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2018-10-28 16:00:13,207 INFO     ___FILE_ONLY___ core:
+  account: shota.makino@hitachiconsulting.com
+  disable_usage_reporting: 'True'
+  project: firesandbox-215505
+
+2018-10-28 16:00:13,207 INFO     ___FILE_ONLY___ 
+
+2018-10-28 16:00:36,918 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2018-10-28 16:00:36,919 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2018-10-28 16:00:36,919 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2018-10-28 16:00:36,919 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2018-10-28 16:00:36,921 INFO     ___FILE_ONLY___ Checking network connection...
+2018-10-28 16:00:38,924 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2018-10-28 16:00:38,925 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2018-10-28 16:00:43,474 INFO     ___FILE_ONLY___ You are logged in as: [shota.makino@hitachiconsulting.com].
+
+
+2018-10-28 16:00:43,487 INFO     oauth2client.client Refreshing access_token
+2018-10-28 16:00:46,097 INFO     ___FILE_ONLY___ Your current project has been set to: [firesandbox-215505].
+
+
+2018-10-28 16:00:46,364 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute']
+2018-10-28 16:00:46,383 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project_info']
+2018-10-28 16:00:46,428 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project-info', u'describe']
+2018-10-28 16:00:46,429 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2018-10-28 16:00:46,433 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2018-10-28 16:00:47,014 INFO     root            Display disabled.
+2018-10-28 16:00:47,018 DEBUG    root            Checking for updates...
+2018-10-28 16:00:47,266 DEBUG    root            Updating notification cache...
+2018-10-28 16:00:47,266 DEBUG    root            Activating notification: [default]
+2018-10-28 16:00:47,266 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Cloud SDK components.  To install them,
+please run:
+  $ gcloud components update
+
+
+2018-10-28 16:00:51,310 DEBUG    root            Not configuring default .boto file. File already exists at [/Users/shota/.boto].
+2018-10-28 16:00:51,310 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2018-10-28 16:00:51,311 INFO     ___FILE_ONLY___ * Commands that require authentication will use shota.makino@hitachiconsulting.com by default
+
+2018-10-28 16:00:51,311 INFO     ___FILE_ONLY___ * Commands will reference project `firesandbox-215505` by default
+
+2018-10-28 16:00:51,312 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2018-10-28 16:00:51,312 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2018-10-28 16:00:51,312 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2018-10-28 16:00:51,312 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2018-10-28 16:00:51,312 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2018-10-28 16:00:51,313 INFO     ___FILE_ONLY___ * Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+2018-10-28 16:00:51,314 INFO     root            Display format: "default"

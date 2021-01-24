@@ -10,13 +10,14 @@ read -r -n 1 -p "Proceed with bootstrap? [y|N] " response
 if [[ "$response" =~ (n|N) || -z "$response" ]];
 then
     exit 1
-fi
+fi 
+
 echo ""
 
 source="$PWD"
 target="$(echo $HOME)"
 
-files="$(find . -name '.*' | grep -vFxf blacklist)"
+files="$(find . -name '.*' -type f | grep -vFxf blacklist)"
 for file in $files; do
     source_file=$(basename "$file")
     target_file="$source_file"

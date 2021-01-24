@@ -1,0 +1,11 @@
+2018-10-30 15:10:17,302 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2018-10-30 15:10:17,305 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'git_helper']
+2018-10-30 15:10:17,308 DEBUG    root            Running [gcloud.auth.git-helper] with arguments: [--ignore-unknown: "True", METHOD: "store"]
+2018-10-30 15:10:17,308 DEBUG    root            Clearing OSX credential cache.
+2018-10-30 15:10:17,308 DEBUG    root            Calling erase with input:
+protocol=https
+host=source.developers.google.com
+
+
+2018-10-30 15:10:17,351 INFO     root            Display format: "default"
+2018-10-30 15:10:17,361 DEBUG    root            SDK update checks are disabled.

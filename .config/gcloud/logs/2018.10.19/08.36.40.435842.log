@@ -1,0 +1,19 @@
+2018-10-19 08:36:40,450 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-10-19 08:36:40,452 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-10-19 08:36:40,452 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-10-19 08:36:40,453 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2018-10-19 08:36:40,456 INFO     ___FILE_ONLY___ core:
+  account: shota.makino@hitachiconsulting.com
+  disable_usage_reporting: 'True'
+  project: firesandbox-215505
+
+2018-10-19 08:36:40,456 INFO     ___FILE_ONLY___ 
+
+2018-10-19 08:36:53,048 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+
